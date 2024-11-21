@@ -38,6 +38,10 @@ img {display: block;
 max-width: 100%;
 height: auto;}
 
+input {
+    font-family: inherit;
+}
+
 .container {
     max-width: 1158px;
     padding-left: 15px;
@@ -65,6 +69,20 @@ height: auto;}
 
 
 /* #region Common */
+
+.button {
+        font-family: inherit;
+        cursor: pointer;
+        background-color: #4d5ae5;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.04em;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+}
+
 .socials {
     display: flex;
 }
@@ -197,11 +215,12 @@ padding: 24px 0;}
         url(../images/people-office-1.jpg);
         margin: 0 auto;
 }
-.hero-container {display: flex;
+.hero-container {
+    display: flex;
     flex-direction: column;
-justify-content: center;
-align-items: center;
-max-width: 1440px;
+    justify-content: center;
+    align-items: center;
+    max-width: 1440px;
 }
 
 .hero-title {max-width: 496px;
@@ -216,17 +235,7 @@ max-width: 1440px;
     display: block;
     min-width: 169px;
     height: 56px;
-    font-family: inherit;
-    cursor: pointer;
-    background-color: #4d5ae5;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
-    color: #fff;
-    border: none;
     margin-top: 48px;
-    border-radius: 4px;
     padding: 16px 32px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -368,6 +377,7 @@ transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .footer-container {
     display: flex;
     align-items: baseline;
+    justify-content: center;
 }
 
 .footer-left-box {
@@ -386,7 +396,11 @@ transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 .logo-accent-light {color:#f4f4fd;}
 
-.footer-socials-header {
+.footer-socials-box {
+    margin-left: 80px;
+}
+
+.footer-box-header {
     margin-bottom: 16px;
     font-weight: 500;
     color: #fff;
@@ -397,6 +411,22 @@ transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .footer .socials-link:hover, .footer .socials-link:focus {
     background-color: #31d0aa;
 }
- 
+
+.footer-form {
+    display: flex;
+}
+.subscribe-label {
+    display: flex;
+    flex-direction: column;
+    margin-right: 24px;
+}
+
+ .footer-button {
+    display: inline-block;
+    min-width: 165px;
+    height: 40px;
+    padding: 8px 24px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 /* #endregion */
 
