@@ -432,8 +432,8 @@ transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 .subscribe-icon {
     position: absolute;
-    top: 8px;
-    right: 84px;
+    top: 0;
+    right: 0;
     
 }
 /* #endregion */
@@ -476,20 +476,14 @@ transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     right: 24px;
     border-radius: 100%;
     background-color: #e7e9fc;
-    stroke-width: 1px;
-    stroke: rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.1);
     width: 24px;
     height: 24px;
 
-
 }
 .icon-exit-btn {
-    position: absolute;
      fill: #2E2F42;
-     top: 50%;
-     left: 50%;
-     transform: translateX(-50%) translateY(-50%);
-}
+  }
 
 .modal-form {}
 
@@ -540,8 +534,14 @@ transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     border: 1px solid #4d5ae5;
 }
 
-.modal-form-submit-btn {
+.modal-form-message {
+    width: 100%;
 
+}
+
+.modal-form-submit-btn {
+display: block;
+margin: 0 auto;
     padding: 16px 32px;
 }
 /* #endregion */
